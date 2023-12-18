@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+  <title>FAQ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          question.parentElement.classList.toggle("faq-open");
+          answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+      });
+    });
+  </script>
+</head>
+
+<body class="faq-body">
+
+  <section class="nav">
+
+    <div class="lhs">
+      <a href="index.html"><img src="images\logo parc studio cropped.png"></a>
+    </div>
+
+    <div class="rhs">
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="./about.html">About</a>
+        <a href="sell.html">Sell</a>
+        <a href="./faq.html">FAQ</a>
+      </nav>
+
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" placeholder="Search....">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="faq-container">
+    <h3 class="faq-header">Frequently Asked Questions</h3>
+    <div class="faq-item-container">
+      <div class="faq-item">
+        <div class="faq-question">What is your brand all about?<div class="faq-arrow">▲</div>
+        </div>
+        <div class="faq-answer">Since the dawn of Fast Fashion, cheaper and mass-produced clothes have flooded the
+          market. While that has been a boon to the industry and gives the customer more choice, it only helps worsen
+          the climate. Keeping the environmental impact in mind, here at <b>PARC Fashion</b>, our aim is to create a
+          sustainable, trendy and transparent fashion brand. So that the next time you buy your clothes, you know where
+          it's coming from and where it's going to! For more information, click <b style="color: blue;"><a
+              href="./about.html#ourinnovation">here</a></b> to go to our about page.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How do you achieve sustainability?<div class="faq-arrow">▲</div>
+        </div>
+        <div class="faq-answer"><b>PARC Fashion</b> has adopted various measures to ensure sustainability. Our pipeline
+          uses the most cutting edge sustainable technology for production. We also ensure that our wastage is kept to
+          the minimum, and promote recycling around the world. We have also started <b>"Recycle Your Style"</b>
+          iniative. For more information, click <b style="color: blue;"><a
+              href="./about.html#replaceyourstyle">here</a></b> to go to our about page.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How long will my order take to ship?<div class="faq-arrow">▲</div>
+        </div>
+        <div class="faq-answer"><b>PARC Fashion</b> ensures your order is packed and shipped within 1-3 business days.
+          From then, the time it takes to arrive at your doorstep will depend, and you can keep track on the tracking
+          link sent in your mail.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do you have a return policy?<div class="faq-arrow">▲</div>
+        </div>
+        <div class="faq-answer">We do have a 14 day FREE return policy on our items. Start a return by contacting us
+          within 14 days of receiving your order. We do not accept returns after 14 days or on sale items.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What are your shipping rates?<div class="faq-arrow">▲</div>
+        </div>
+        <div class="faq-answer">We offer FREE ground shipping all over India for orders above ₹3000. Domestic shipping
+          for orders worth less than that will cost a flat ₹500 shipping charge. Global Shipping Rates and Turbo
+          Shipping Rates are subject to change and will be calculated on your order page.</div>
+      </div>
+      <!-- Add more FAQ items as needed -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo"><img src="images\logo parc studio.png"></div>
+      <div class="footer-links">
+        <a href="about.html">join the parc community</a>
+        <a href="faq.html">Need help?</a>
+        <a href="faq.html">order info</a>
+        <a href="contactus.html">Contact US</a>
+        <a href="faq.html">FAQ's</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/"><img src="images\facebookicon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="images\twittericon.png" alt="Twitter"></a>
+        <a href="https://www.twitter.com"><img src="images\instagramicon.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="contact">
+      <p><img src="images\mailicon.png" alt="Instagram"> parcfashion@gmail.com</p>
+      <p><img src="images\callicon.png"> 9464767489</p>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2023 PARC STUDIO. All rights reserved.
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+<html lang="en">

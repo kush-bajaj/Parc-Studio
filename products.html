@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- custom js file link  -->
+   <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+
+   <section class="nav">
+
+      <div class="lhs">
+         <a href="index.html"><img src="images\logo parc studio cropped.png"></a>
+      </div>
+
+      <div class="rhs">
+         <nav>
+            <a href="./index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="./about.html">About</a>
+            <a href="sell.html">Sell</a>
+            <a href="./faq.html">FAQ</a>
+          </nav>
+
+         <div class="search-container">
+            <div class="search-box">
+               <input type="text" placeholder="Search....">
+            </div>
+         </div>
+      </div>
+   </section>
+   <div class="tab">
+      <div class="btns">
+         <button class="tablinks" onclick="openCity(event, 'mens')">MEN</button>
+         <button class="tablinks" onclick="openCity(event, 'womens')">WOMEN</button>
+         <button class="tablinks" onclick="openCity(event, 'boys')">BOYS</button>
+         <button class="tablinks" onclick="openCity(event, 'girls')">GIRLS</button>
+         <button class="tablinks" onclick="openCity(event, 'new arrivals')">NEW ARRIVALS</button>
+
+
+      </div>
+   </div>
+
+   <div id="mens" class="tabcontent">
+      <div class="container">
+
+
+         <div class="products-container">
+
+            <div class="product" data-name="p-1">
+               <img src="images/t1.png" alt="">
+               <h3>Pink,White and Black Hoodie</h3>
+               <div class="price">&#8377;799</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+               <img src="images/hoodie3.png" alt="">
+               <h3>Mustard Hoodie</h3>
+               <div class="price">&#8377;689</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+               <img src="images/tee.jpg" alt="">
+               <h3>Polo T-Shirt</h3>
+               <div class="price">&#8377;499</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+               <img src="images/t2.png" alt="">
+               <h3>White Hoodie</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+               <img src="images/t4.png" alt="">
+               <h3>Olive Green Cargo Pants</h3>
+               <div class="price">&#8377;999</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+               <img src="images/shirt.jpg" alt="">
+               <h3>Patterned Shirt</h3>
+               <div class="price">&#8377;749</div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="products-preview">
+
+         <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/t1.png" alt="">
+            <h3>Pink,White and Black Hoodie</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 747)</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Made in India</p>
+            <div class="price">&#8377;799</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+         <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/hoodie3.png" alt="">
+            <h3>Mustard Hoodie</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 289 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Made in India</p>
+            <div class="price">&#8377;689</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+         <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/tee.jpg" alt="">
+            <h3>Polo T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1000 )</span>
+            </div>
+            <p>100% Cotton</p>
+            <p>&#8226;Style:Polo</p>
+            <div class="price">&#8377;499</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+         <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/t2.png" alt="">
+            <h3>White Hoodie</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 950 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Neck Style:Hooded Neck</p>
+            <div class="price">&#8377;899</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+         <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/t4.png" alt="">
+            <h3>Olive Green Cargo Pants</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1350 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Hand Wash Only</p>
+            <div class="price">&#8377;999</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+         <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/shirt.jpg" alt="">
+            <h3>Patterned Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 800 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;749</div>
+            <a href="#" class="buttons">buy now</a>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="womens" class="tabcontent">
+      <div class="container_women">
+
+         <div class="products-container_women">
+
+            <div class="product_women" data-name="p-1">
+               <img src="images/w1.png" alt="">
+               <h3>Pink Hoodie</h3>
+               <div class="price">&#8377;999</div>
+            </div>
+
+            <div class="product_women" data-name="p-2">
+               <img src="images/w2.png" alt="">
+               <h3>Black T-Shirt</h3>
+               <div class="price">&#8377;599</div>
+            </div>
+
+            <div class="product_women" data-name="p-3">
+               <img src="images/w3.png" alt="">
+               <h3>Casual Sweater</h3>
+               <div class="price">&#8377;799</div>
+            </div>
+
+            <div class="product_women" data-name="p-4">
+               <img src="images/w4.png" alt="">
+               <h3>Elegant Women's Trousers</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product_women" data-name="p-5">
+               <img src="images/t5.png" alt="">
+               <h3>Women Checkered Pants</h3>
+               <div class="price">&#8377;1099</div>
+            </div>
+
+            <div class="product_women" data-name="p-6">
+               <img src="images/t3.png" alt="">
+               <h3>Red Dress</h3>
+               <div class="price">&#8377;1499</div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="products-preview_women">
+
+         <div class="preview_women" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/w1.png" alt="">
+            <h3>Pink Hoodie</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 700 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;Style:Regular</p>
+            <div class="price">&#8377;999</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_women" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/w2.png" alt="">
+            <h3>Black T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Neck Style:Round Neck</p>
+            <p>&#8226;100% Cotton</p>
+            <div class="price">&#8377;599</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_women" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/w3.png" alt="">
+            <h3>Casual Sweater</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 900 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;Neck Syle:V-Neck</p>
+            <div class="price">&#8377;799</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_women" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/w4.png" alt="">
+            <h3>Elegant Women's Trousers</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;899</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_women" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/t5.png" alt="">
+            <h3>Women Checkered Pants</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 2000 )</span>
+            </div>
+            <p>&#8226;Made in India</p>
+            <p>&#8226;Pattern:Checkered</p>
+            <div class="price">&#8377;1099</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_women" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/t3.png" alt="">
+            <h3>Red Dress</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Material:Polyester</p>
+            <p>&#8226;Pattern:Polka Dots</p>
+            <div class="price">&#8377;1499</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+   <div id="boys" class="tabcontent">
+      <div class="container_boys">
+
+         <div class="products-container_boys">
+
+            <div class="product_boys" data-name="p-1">
+               <img src="images/l1.png" alt="">
+               <h3>Avengers Lower</h3>
+               <div class="price">&#8377;499</div>
+            </div>
+
+            <div class="product_boys" data-name="p-2">
+               <img src="images/k2.png" alt="">
+               <h3>Kid's Blue Overalls</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product_boys" data-name="p-3">
+               <img src="images/k4.png" alt="">
+               <h3>White Sweatshirt</h3>
+               <div class="price">&#8377;849</div>
+            </div>
+
+            <div class="product_boys" data-name="p-4">
+               <img src="images/k3.jpeg" alt="">
+               <h3>Orange Sweatshirt</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product_boys" data-name="p-5">
+               <img src="images/c1.png" alt="">
+               <h3>Green Cargo Pants</h3>
+               <div class="price">&#8377;1099</div>
+            </div>
+
+            <div class="product_boys" data-name="p-6">
+               <img src="images/s1.jpeg" alt="">
+               <h3>Shirt</h3>
+               <div class="price">&#8377;749</div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="products-preview_boys">
+
+         <div class="preview_boys" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/l1.png" alt="">
+            <h3>Avengers Lower</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Type:Joggers</p>
+            <div class="price">&#8377;499</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_boys" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/k2.png" alt="">
+            <h3>Kid's blue Overalls</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 750 )</span>
+            </div>
+            <p>&#8226;Material:Denim</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;899</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_boys" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/k4.png" alt="">
+            <h3>White Sweatshirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 950 )</span>
+            </div>
+            <p>&#8226;Neck Style:Hooded Neck</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;849</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_boys" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/k3.jpeg" alt="">
+            <h3>Orange Sweatshirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Neck Style:Round Neck</p>
+            <p>&#8226;Style:Casual</p>
+            <div class="price">&#8377;899</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_boys" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/c1.png" alt="">
+            <h3>Green Cargo Pants</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 300 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;100% Cotton</p>
+            <div class="price">&#8377;1099</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_boys" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/s1.jpeg" alt="">
+            <h3>Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 750 )</span>
+            </div>
+            <p>&#8226;Style:Casual</p>
+            <p>&#8226;Pattern:Solid</p>
+            <div class="price">&#8377;749</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+   <div id="girls" class="tabcontent">
+      <div class="container_girls">
+
+         <div class="products-container_girls">
+
+            <div class="product_girls" data-name="p-1">
+               <img src="images/g1.png" alt="">
+               <h3>Tracksuit</h3>
+               <div class="price">&#8377;999</div>
+            </div>
+
+            <div class="product_girls" data-name="p-2">
+               <img src="images/g2.png" alt="">
+               <h3>Barbie T-Shirt</h3>
+               <div class="price">&#8377;599</div>
+            </div>
+
+            <div class="product_girls" data-name="p-3">
+               <img src="images/g3.png" alt="">
+               <h3>White T-Shirt</h3>
+               <div class="price">&#8377;549</div>
+            </div>
+
+            <div class="product_girls" data-name="p-4">
+               <img src="images/g4.png" alt="">
+               <h3>Jeans</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product_girls" data-name="p-5">
+               <img src="images/g5.jpg" alt="">
+               <h3>White Dress</h3>
+               <div class="price">&#8377;799</div>
+            </div>
+
+            <div class="product_girls" data-name="p-6">
+               <img src="images/g6.png" alt="">
+               <h3>Night Suit</h3>
+               <div class="price">&#8377;1199</div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="products-preview_girls">
+
+         <div class="preview_girls" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/g1.png" alt="">
+            <h3>Tracksuit</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 900 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;999</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_girls" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/g2.png" alt="">
+            <h3>Barbie T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Style:Casual</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;599</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_girls" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/g3.png" alt="">
+            <h3>White T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Neck Style:Round Neck</p>
+            <div class="price">&#8377;549</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_girls" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/g4.png" alt="">
+            <h3>Jeans</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 800 )</span>
+            </div>
+            <p>&#8226;Material:Denim</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;899</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_girls" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/g5.jpg" alt="">
+            <h3>White Dress</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1500 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Pattern:Floral</p>
+            <div class="price">799</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_girls" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/g6.png" alt="">
+            <h3>Night Suit</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 600 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Style:Regular</p>
+            <div class="price">&#8377;1199</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div id="new arrivals" class="tabcontent">
+      <div class="container_arrivals">
+
+         <div class="products-container_arrivals">
+
+            <div class="product_arrivals" data-name="p-1">
+               <img src="images/n1.png" alt="">
+               <h3>Women's Casual Shirt</h3>
+               <div class="price">&#8377;849</div>
+            </div>
+
+            <div class="product_arrivals" data-name="p-2">
+               <img src="images/n2.png" alt="">
+               <h3>Women's Cargo Pants</h3>
+               <div class="price">&#8377;1299</div>
+            </div>
+
+            <div class="product_arrivals" data-name="p-3">
+               <img src="images/n3.jpeg" alt="">
+               <h3>Men's Polo T-Shirt</h3>
+               <div class="price">&#8377;999</div>
+            </div>
+
+            <div class="product_arrivals" data-name="p-4">
+               <img src="images/n4.jpeg" alt="">
+               <h3>Women's T-Shirt</h3>
+               <div class="price">&#8377;749</div>
+            </div>
+
+            <div class="product_arrivals" data-name="p-5">
+               <img src="images/n5.jpeg" alt="">
+               <h3>Men's Trousers</h3>
+               <div class="price">&#8377;899</div>
+            </div>
+
+            <div class="product_arrivals" data-name="p-6">
+               <img src="images/n6.png" alt="">
+               <h3>Men's Casual Shirt</h3>
+               <div class="price">&#8377;999</div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="products-preview_arrivals">
+
+         <div class="preview_arrivals" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/n1.png" alt="">
+            <h3>Women's Casual Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1000 )</span>
+            </div>
+            <p>&#8226;Material:Polyester</p>
+            <p>&#8226;Style:Western</p>
+            <div class="price">&#8377;849</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_arrivals" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/n2.png" alt="">
+            <h3>Women's Cargo Pants</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 750 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;Fit Type:Regular</p>
+            <div class="price">&#8377;1299</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_arrivals" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/n3.jpeg" alt="">
+            <h3>Men's Polo T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>&#8226;Style:Full Sleeve Polo</p>
+            <p>&#8226;Machine Wash</p>
+            <div class="price">&#8377;999</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_arrivals" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/n4.jpeg" alt="">
+            <h3>Women's T-Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 900 )</span>
+            </div>
+            <p>&#8226;Style:Casual</p>
+            <p>&#8226;Neck Style:Round Neck</p>
+            <div class="price">&#8377;749</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_arrivals" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/n5.jpeg" alt="">
+            <h3>Men's Trousers</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1500 )</span>
+            </div>
+            <p>&#8226;Pattern:Solid</p>
+            <p>&#8226;Made in India</p>
+            <div class="price">&#8377;899</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+         <div class="preview_arrivals" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/n6.png" alt="">
+            <h3>Men's Causal Shirt</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 1200 )</span>
+            </div>
+            <p>&#8226;100% Cotton</p>
+            <p>&#8226;Neck Style:Collared Neck</p>
+            <div class="price">&#8377;999</div>
+            <div class="buttons">
+               <a href="#" class="buy">buy now</a>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="footer-content">
+         <div class="footer-logo"><img src="images\logo parc studio.png"></div>
+         <div class="footer-links">
+            <a href="about.html">join the parc community</a>
+            <a href="faq.html">Need help?</a>
+            <a href="faq.html">order info</a>
+            <a href="contactus.html">Contact US</a>
+            <a href="faq.html">FAQ's</a>
+         </div>
+         <div class="footer-social">
+            <a href="https://www.facebook.com/"><img src="images\facebookicon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="images\twittericon.png" alt="Twitter"></a>
+            <a href="https://www.twitter.com"><img src="images\instagramicon.png" alt="Instagram"></a>
+         </div>
+      </div>
+      <div class="contact">
+         <p><img src="images\mailicon.png" alt="Instagram"> parcfashion@gmail.com</p>
+         <p><img src="images\callicon.png"> 9464767489</p>
+      </div>
+      <div class="footer-bottom">
+         &copy; 2023 PARC STUDIO. All rights reserved.
+      </div>
+   </footer>

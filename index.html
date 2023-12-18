@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>PARC FASHION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+
+  <script>
+    let slideIndex = 0;
+    addEventListener("DOMContentLoaded", (event) => {
+      showSlides();
+    });
+
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3500);
+    }
+  </script>
+</head>
+
+<body>
+  <section class="nav">
+    <! Header>
+
+      <div class="lhs">
+        <a href="index.html"><img src="images\logo parc studio cropped.png"></a>
+      </div>
+
+      <div class="rhs">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="./about.html">About</a>
+          <a href="sell.html">Sell</a>
+          <a href="./faq.html">FAQ</a>
+        </nav>
+
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" placeholder="Search....">
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/SLIDE8.png" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/SLIDE11.png" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images/SLIDE12.png" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <a href="./about.html"><img src="images/SLIDE10.png" style="width:100%"></a>
+    </div>
+
+  </div>
+  <br>
+
+
+  <div style="text-align:center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="categories">
+    <div class="categories-text">
+      categories
+    </div>
+  </div>
+
+  <div class="ban">
+    <! banners - men women boy girl newarrivals>
+      <a href="./products.html"><img src="images/1.png" class="i1"></a>
+
+      <a href="./products.html?type=1"><img src="images/2.png" class="i2"></a>
+
+      <a href="./products.html?type=2"><img src="images/3.png" class="i3"></a>
+
+      <a href="./products.html?type=3"><img src="images/4.png" class="i4"></a>
+
+      <a href="./products.html?type=4"><img src="images/5.png" class="i5"></a>
+  </div>
+
+
+  <section id="search-banner">
+    <div class="search-banner-text">
+      <div class="search-banner-text-ban">
+        <h1>Sustain Your Style</h1><br>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <! Footer about>
+      <div class="footer-content">
+        <div class="footer-logo"><img src="images\logo parc studio.png"></div>
+        <div class="footer-links">
+          <a href="about.html">join the parc community</a>
+          <a href="faq.html">Need help?</a>
+          <a href="faq.html">order info</a>
+          <a href="contactus.html">Contact US</a>
+          <a href="faq.html">FAQ's</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/"><img src="images\facebookicon.png" alt="Facebook"></a>
+          <a href="https://www.twitter.com"><img src="images\twittericon.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com"><img src="images\instagramicon.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="contact">
+        <p><img src="images\mailicon.png" alt="Instagram"> parcfashion@gmail.com</p>
+        <p><img src="images\callicon.png"> 9464767489</p>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2023 PARC STUDIO. All rights reserved.
+      </div>
+  </footer>
+
+</body>
+
+</html>
